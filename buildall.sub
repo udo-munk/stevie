@@ -1,0 +1,17 @@
+cz window
+as window
+cz normal
+as normal
+cz misccmds
+as misccmds
+cz linefunc
+as linefunc
+cz hexchars
+as hexchars
+cz cmdline
+as cmdline
+cz edit
+as edit
+cz main
+as main
+ln -o vi.com window.o normal.o misccmds.o linefunc.o hexchars.o cmdline.o edit.o main.o c.lib
