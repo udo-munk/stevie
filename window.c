@@ -23,7 +23,11 @@ windgoto(r,c)
 int r,c;
 {
 	/* Locate cursor */
-	printf("\033Y%c%c",r+0x20,c+0x20);
+	/* Phillips P2000 */
+	/*printf("\033Y%c%c",r+0x20,c+0x20);*/
+
+	/* ANSI */
+	printf("\033[%d;%dH",r,c);
 }
 
 windexit(r)
@@ -35,7 +39,11 @@ int r;
 windclear()
 {
 	/* Clear the screen */
-	printf("\014");
+	/* Phillips P2000 */
+	/*printf("\014");*/
+
+	/* ANSI */
+	printf("\033[2J");
 }
 
 windgetc()
