@@ -1,17 +1,18 @@
-cz window
-as window
-cz normal
-as normal
-cz misccmds
-as misccmds
-cz linefunc
-as linefunc
-cz hexchars
-as hexchars
-cz cmdline
-as cmdline
-cz edit
-as edit
-cz main
-as main
-ln -o vi.com window.o normal.o misccmds.o linefunc.o hexchars.o cmdline.o edit.o main.o c.lib
+c:cz -ic: window
+c:as -zap window
+c:cz -ic: normal
+c:as -zap normal
+c:cz -ic: misccmds
+c:as -zap misccmds
+c:cz -ic: linefunc
+c:as -zap linefunc
+c:cz -ic: hexchars
+c:as -zap hexchars
+c:cz -ic: cmdline
+c:as -zap cmdline
+c:cz -ic: edit
+c:as -zap edit
+c:cz -ic: main
+c:as -zap main
+c:ln -o vi.com window.o normal.o misccmds.o linefunc.o hexchars.o cmdline.o edit.o main.o -lc:c
+era *.o
